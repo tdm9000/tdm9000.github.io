@@ -54,13 +54,20 @@ and bopping them on the head!</p>
         <li>Thumper</li>
     </ol>
         
-       <canvas id="example" width="400" height="400"></canvas>
+      <canvas id="prostokat" width="300" height="210"></canvas>
+
 <script>
-            var example = document.getElementById("example");
-var context = example.getContext('2d');
-context.fillStyle = "rgb(255,0,0)";
-context.fillRect(30, 30, 50, 50);
-        </script>
+var c=document.getElementById("prostokat");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.rotate(Math.PI / 30);
+ctx.rect(30, 20, 250, 150);
+ctx.fillStyle="gray";
+ctx.fill();
+ctx.lineWidth=5;
+ctx.strokeStyle="red";
+ctx.stroke();
+</script>
      
     <img src="IMG_20180528_103603.jpg" alt="Rabbit with lop ears in barn" width="203"> 
     <img src="IMG_20180528_103018.jpg" alt="dom" width="203">    
