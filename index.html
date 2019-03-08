@@ -21,6 +21,12 @@
              .song-lyrics {
             background-color: green;
         }
+             
+             
+           #clicker{
+               background-color: red;
+               color: rgb(1, 32, 50);
+             }
         </style>
     </head>
     <body>
@@ -60,7 +66,7 @@ and bopping them on the head!</p>
 var c=document.getElementById("prostokat");
 var ctx=c.getContext("2d");
 ctx.beginPath();
-ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+ctx.ellipse(100, 100, 50, 75, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="gray";
 ctx.fill();
 ctx.lineWidth=5;
