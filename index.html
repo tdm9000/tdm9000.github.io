@@ -68,6 +68,7 @@ and bopping them on the head!</p>
     <img src="IMG_20180528_103018.jpg" alt="dom" width="203">    
         
         <button id="clicker">Button dla Alicji</button>
+        <button id="clear">gumka</button>
         
         <script>
         /* 
@@ -114,6 +115,42 @@ ctx.stroke();
     // 3. Add the event listener for the element and function
     // anonymous "inline"
     clickerButton.addEventListener("click", onButtonClick);
+    
+    </script>
+        <script>
+    // 1. Find and store the element we want to listen to events on.
+    var clickerButton = document.getElementById("clear");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onButtonClick = function() {
+        
+        
+    
+var f=document.getElementById("obrazek");
+var ctx=f.getContext("2d");
+var leftX=150;
+var leftY=170;
+var sunRadius=100;
+   
+ctx.beginPath();
+ctx.ellipse(leftX, leftY, 50, 75, Math.PI / 3, 0, 2 * Math.PI);
+ctx.fillStyle="orange";
+ctx.fill();
+ctx.lineWidth=1;
+ctx.strokeStyle="green";
+ctx.stroke();
+        ctx.clearRect(0, 0, 400, 400);
+
+   
+    
+  
+    
+
+
+    };
+    // 3. Add the event listener for the element and function
+    // anonymous "inline"
+    clickerButton.addEventListener("push", onButtonClick);
     
     </script>
     </body>
