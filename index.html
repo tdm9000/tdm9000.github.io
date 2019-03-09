@@ -100,10 +100,10 @@ var ctx=g.getContext("2d");
 var leftX=150;
 var leftY=170;
 var sunRadius=50;
-
+ctx.beginPath();
 
         for (let i=0; i<50; i++) {
- draw = function() {   
+
 ctx.clearRect(0, 0, 400, 400);
 ctx.ellipse(leftX-50, leftY, 5+(i*0,75), 8+i, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="orange";
@@ -132,7 +132,7 @@ ctx.stroke();
    setInterval(ctx.clearRect, 10000);   
 
   sunRadius=sunRadius*(i+1)
-        };
+      
 }
 
     };
@@ -193,4 +193,27 @@ ctx.lineWidth=5;
 ctx.strokeStyle="red";
 ctx.stroke();
     </script>
+    <script> 
+    // Set initial variables to values that we'll animate over time
+         <canvas id="ekran" width="800" height="400"></canvas>
+var x = 0;
+var y = 0;
+
+draw = function() {
+    background(255, 255, 255);
+    
+    noStroke();
+    fill(79, 255, 94);
+    
+    // Moves across the canvas, getting taller
+    ellipse(x, 200, 30, 30+x/3);
+    
+    // Moves down the canvas, getting wider
+    ellipse(200, y, 30+y/3, 30);
+    
+    // Add one to each of the variables
+    x++;
+    y++;
+};
+         </script>
 </html>
