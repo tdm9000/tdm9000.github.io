@@ -81,7 +81,10 @@ and bopping them on the head!</p>
        
         headingEl.innerHTML = "Słoneczne, cichutkie w 5 lokalowym apartamentowcu ";
         </script>
+        
+        
         <script>
+            
     // 1. Find and store the element we want to listen to events on.
     var clickerButton = document.getElementById("clicker");
     // 2. Define the function that will respond to the event.
@@ -121,7 +124,7 @@ ctx.stroke();
     var clearButton = document.getElementById("clear");
     // 2. Define the function that will respond to the event.
     // callback 
-    var onButtonClick = function() {
+    var onClearClick = function() {
         
         
     
@@ -149,7 +152,7 @@ ctx.stroke();
     };
     // 3. Add the event listener for the element and function
     // anonymous "inline"
-    clickerButton.addEventListener("clear", onButtonClick);
+    clearButton.addEventListener("click", onClearClick);
     
     </script>
     </body>
