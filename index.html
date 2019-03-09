@@ -63,6 +63,7 @@ and bopping them on the head!</p>
       <canvas id="obrazek" width="400" height="400"></canvas>
 
 <script>
+    function draw() {
 var c=document.getElementById("obrazek");
 var ctx=c.getContext("2d");
 var leftX = 45;
@@ -70,7 +71,7 @@ var rightX = 170;
 var sunRadius = 100;
 
 
-    ctx.beginPath();
+   
     ctx.fillStyle="yellow";
     ctx.ellipse(200, 100, sunRadius, sunRadius);
     
@@ -91,7 +92,7 @@ var sunRadius = 100;
 ctx.strokeStyle="red";
 ctx.stroke();
     
-     
+    }
     
 
 </script>
