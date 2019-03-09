@@ -60,18 +60,12 @@ and bopping them on the head!</p>
         <li>Thumper</li>
     </ol>
         
-      <canvas id="prostokat" width="300" height="210"></canvas>
+      <canvas id="obrazek" width="300" height="210"></canvas>
 
 <script>
-var c=document.getElementById("prostokat");
+var c=document.getElementById("obrazek");
 var ctx=c.getContext("2d");
-ctx.beginPath();
-ctx.ellipse(100, 100, 50, 75, Math.PI / 1, 0, 2 * Math.PI);
-ctx.fillStyle="gray";
-ctx.fill();
-ctx.lineWidth=5;
-ctx.strokeStyle="red";
-ctx.stroke();
+
     
     
     noStroke();
@@ -82,20 +76,20 @@ var sunRadius = 100;
 draw = function() {
     background(184, 236, 255);
     
-    fill(255, 170, 0);
-    ellipse(200, 100, sunRadius, sunRadius);
+    ctx.fill(255, 170, 0);
+    ctx.ellipse(200, 100, sunRadius, sunRadius);
     
     // clouds 
-    fill(255, 255, 255);
+    ctx.fill(255, 255, 255);
     // left cloud
-    ellipse(leftX, 150, 126, 97);
-    ellipse(leftX+62, 150, 70, 60);
-    ellipse(leftX-62, 150, 70, 60);
+    ctx.ellipse(leftX, 150, 126, 97);
+    xtx.ellipse(leftX+62, 150, 70, 60);
+    ctx.ellipse(leftX-62, 150, 70, 60);
     
     // right cloud
-    ellipse(rightX, 100, 126, 97);
-    ellipse(rightX+62, 100, 70, 60);
-    ellipse(rightX-62, 100, 70, 60);
+    ctx.ellipse(rightX, 100, 126, 97);
+    ctx.ellipse(rightX+62, 100, 70, 60);
+    ctx.ellipse(rightX-62, 100, 70, 60);
     
      
     
@@ -133,5 +127,18 @@ draw = function() {
     </script>
     </body>
     <body><pre style="word-wrap: break-word; white-space: pre-wrap;"><em> Hej </em> <strong>To Ty Alicjo!!! </strong></pre></body>
+ 
+    <canvas id="prostokat" width="300" height="210"></canvas>
 
+<script>
+var c=document.getElementById("prostokat");
+var ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.ellipse(100, 100, 50, 75, Math.PI / 1, 0, 2 * Math.PI);
+ctx.fillStyle="gray";
+ctx.fill();
+ctx.lineWidth=5;
+ctx.strokeStyle="red";
+ctx.stroke();
+    </script>
 </html>
