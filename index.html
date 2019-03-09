@@ -100,7 +100,7 @@ var ctx=g.getContext("2d");
 var leftX=150;
 var leftY=170;
 var sunRadius=100;
- for (let i=0; i<100; i++) {  
+ 
 ctx.beginPath();
 ctx.ellipse(leftX-50, leftY, sunRadius*0,75, sunRadius, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="orange";
@@ -129,7 +129,7 @@ ctx.stroke();
     
   sunRadius=sunRadius*(i+1)
     
-};
+
 
     };
     // 3. Add the event listener for the element and function
