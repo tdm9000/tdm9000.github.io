@@ -103,7 +103,7 @@ var sunRadius=50;
  
 ctx.beginPath();
         for (let i=0; i<50; i++) {
- setInterval(ctx.clearRect, 1000/60);   
+ 
 ctx.clearRect(0, 0, 400, 400);
 ctx.ellipse(leftX-50, leftY, 5+(i*0,75), 8+i, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="orange";
@@ -129,7 +129,7 @@ ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="green";
 ctx.stroke();
-   
+   setInterval(ctx.clearRect, 10000);   
 
   sunRadius=sunRadius*(i+1)
     
