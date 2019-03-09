@@ -73,17 +73,17 @@ var leftX = 45;
 var rightX = 370;
 var sunRadius = 100;
 
-draw = function() {
-    background(184, 236, 255);
-    
-    ctx.fill(255, 170, 0);
+
+    ctx.beginPath();
+    ctx.fillStyle="yellow";
     ctx.ellipse(200, 100, sunRadius, sunRadius);
     
     // clouds 
-    ctx.fill(255, 255, 255);
+   
+    ctx.fillStyle="gray";
     // left cloud
     ctx.ellipse(leftX, 150, 126, 97);
-    xtx.ellipse(leftX+62, 150, 70, 60);
+    ctx.ellipse(leftX+62, 150, 70, 60);
     ctx.ellipse(leftX-62, 150, 70, 60);
     
     // right cloud
@@ -93,7 +93,7 @@ draw = function() {
     
      
     
-};
+
 </script>
      
     <img src="IMG_20180528_103603.jpg" alt="Rabbit with lop ears in barn" width="203"> 
