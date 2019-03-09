@@ -60,15 +60,11 @@ and bopping them on the head!</p>
         <li>Thumper</li>
     </ol>
         
-      <canvas id="obrazek" width="300" height="210"></canvas>
+      <canvas id="obrazek" width="400" height="400"></canvas>
 
 <script>
 var c=document.getElementById("obrazek");
 var ctx=c.getContext("2d");
-
-    
-    
-    noStroke();
 var leftX = 45;
 var rightX = 170;
 var sunRadius = 100;
@@ -90,6 +86,10 @@ var sunRadius = 100;
     ctx.ellipse(rightX, 100, 126, 97);
     ctx.ellipse(rightX+62, 100, 70, 60);
     ctx.ellipse(rightX-62, 100, 70, 60);
+    
+    ctx.lineWidth=5;
+ctx.strokeStyle="red";
+ctx.stroke();
     
      
     
