@@ -63,36 +63,43 @@ and bopping them on the head!</p>
       <canvas id="obrazek" width="400" height="400"></canvas>
 
 <script>
-    function draw() {
+    
 var c=document.getElementById("obrazek");
 var ctx=c.getContext("2d");
 var leftX = 45;
 var rightX = 170;
 var sunRadius = 100;
 
+    ctx.beginPath();
 
    
-    ctx.fillStyle="yellow";
+    
     ctx.ellipse(200, 100, sunRadius, sunRadius);
+    ctx.fillStyle="yellow";
+    ctx.fill();
     
     // clouds 
    
-    ctx.fillStyle="gray";
+   
     // left cloud
     ctx.ellipse(leftX, 150, 126, 97);
     ctx.ellipse(leftX+62, 150, 70, 60);
     ctx.ellipse(leftX-62, 150, 70, 60);
+     ctx.fillStyle="gray";
+    ctx.fill();
     
     // right cloud
     ctx.ellipse(rightX, 100, 126, 97);
     ctx.ellipse(rightX+62, 100, 70, 60);
     ctx.ellipse(rightX-62, 100, 70, 60);
+     ctx.fillStyle="gray";
+    ctx.fill();
     
     ctx.lineWidth=5;
 ctx.strokeStyle="red";
 ctx.stroke();
     
-    };
+  
     
 
 </script>
