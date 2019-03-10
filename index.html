@@ -158,15 +158,12 @@ ctx.stroke();
     // callback 
     var onButtonClick = function() {
        
-       var al = new Image();
-       // ctx.drawImage(al, 0, 0, 300, 300);
-    al.src = "IMAG0327.jpg" alt="dom" width="203";
-        function draw() {
+       
              var s=document.getElementById("przycisk");
 var ctx=s.getContext("2d");
-
+al = document.getElementById("IMAG0327.jpg");
   ctx.drawImage(al, 0, 0, 300, 300);
-        } 
+   
     };
 
 
@@ -246,7 +243,7 @@ ctx.fill();
 ctx.lineWidth=5;
 ctx.strokeStyle="blue";
 ctx.stroke();
-    
+    }
     // Moves across the canvas, getting taller
     
     
@@ -256,7 +253,7 @@ ctx.stroke();
     // Add one to each of the variables
  
 
-}
+
          </script>
      <body onload="draw();">
      </body>
