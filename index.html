@@ -196,21 +196,21 @@ ctx.stroke();
      <canvas id="ekran" width="300" height="210"></canvas>
     <script> 
     // Set initial variables to values that we'll animate over time
-         
+         var x = 30;
+var y = 30;
+
           function draw() {
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
-var x = 30;
-var y = 30;
 
    
-   for (let z=1; z<500; z++) {
+  // for (let z=1; z<500; z++) {
        
 ctx.ellipse(100, 100, x, y, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="gray";
 ctx.fill();
 ctx.lineWidth=5;
-ctx.strokeStyle="yellow";
+ctx.strokeStyle="blue";
 ctx.stroke();
     
     // Moves across the canvas, getting taller
@@ -222,7 +222,7 @@ ctx.stroke();
     // Add one to each of the variables
   x=x+0,01;
   y=y+0,01;
- }
+// }
 }
          </script>
      <body onload="draw();">
