@@ -227,8 +227,10 @@ ctx.stroke();
          </script>
      <body onload="draw();">
      </body>
-      <canvas id="canvas1" width="300" height="300"></canvas>
+     
      <body>
+          <canvas id="canvas1" width="300" height="300"></canvas>
+          <script>
      var sun = new Image();
 var moon = new Image();
 var earth = new Image();
@@ -240,7 +242,7 @@ function init() {
 }
 
 function draw() {
-  var ctx = document.getElementById('canvas1').getContext('2d');
+  var ctx = document.getElementById("canvas1").getContext("2d");
 
   ctx.globalCompositeOperation = 'destination-over';
   ctx.clearRect(0, 0, 300, 300); // clear canvas1
@@ -276,5 +278,6 @@ function draw() {
 }
 
 init();
+               </script>
     </body>
 </html>
