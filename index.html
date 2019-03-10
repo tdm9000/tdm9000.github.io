@@ -60,7 +60,7 @@ and bopping them on the head!</p>
         <li>Thumper</li>
     </ol>
         
-      <canvas id="obrazek" width="400" height="400"></canvas>
+     
         
         
 
@@ -71,12 +71,13 @@ and bopping them on the head!</p>
         <img src="DSC_5639.JPG" alt="dom" width="203"> 
         <img src="DSC_5645.JPG" alt="domy" width="203"> 
         
-                                                                                   
+    <canvas id="obrazek" width="300" height="300"></canvas>                                                                                
         
         
-        <button id="clicker">Button dla Alicji</button>
+        <button id="clicker">Button Wielkanocny</button>
          <button id="pajak">Alicja sie wspina</button>
-        <button id="clear">gumka</button>
+        <button id="clear">gumka Wielkanocna</button>
+        <button id="clear2">gumka dla Alicji</button>
         
         <script>
         /* 
@@ -175,6 +176,33 @@ var ctx=s.getContext("2d");
     // 3. Add the event listener for the element and function
    
 pajakButton.addEventListener("click", onButtonClick);
+    
+    </script>
+        
+         <script>
+    // 1. Find and store the element we want to listen to events on.
+    var clear2Button = document.getElementById("clear2");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    var onClear2Click = function() {
+        
+        
+    
+var f=document.getElementById("przycisk");
+var ctx=f.getContext("2d");
+
+        ctx.clearRect(0, 0, 400, 400);
+
+   
+    
+  
+    
+
+
+    };
+    // 3. Add the event listener for the element and function
+    // anonymous "inline"
+    clear2Button.addEventListener("click", onClear2Click);
     
     </script>
         
