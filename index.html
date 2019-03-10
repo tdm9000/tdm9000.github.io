@@ -159,17 +159,10 @@ ctx.stroke();
     var onButtonClick = function() {
         var s=document.getElementById("przycisk");
 var ctx=s.getContext("2d");
-       // var al = new Image();
+       var al = new Image();
        // ctx.drawImage(al, 0, 0, 300, 300);
-     // al.src = "IMAG0327.jpg" alt="dom" width="203";
-         ctx.beginPath();
-ctx.ellipse(100, 100, 50, 75, Math.PI / 1, 0, 2 * Math.PI);
-ctx.fillStyle="gray";
-ctx.fill();
-ctx.lineWidth=5;
-ctx.strokeStyle="red";
-ctx.stroke();
-       
+    al.src = "IMAG0327.jpg" alt="dom" width="203";
+         
     }
 
 
@@ -239,10 +232,10 @@ var y = 30;
           function draw() {
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
-for (let z=1; z<500; z++) {
+for (let z=1; z<50; z++) {
    
   
- ctx.clearRect(0, 0, 300, 210);      
+ 
 ctx.ellipse(x+30, y+30, x, y, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="gray";
 ctx.fill();
