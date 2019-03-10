@@ -198,13 +198,13 @@ ctx.stroke();
     // Set initial variables to values that we'll animate over time
          var x = 30;
 var y = 30;
-
+for (let z=1; z<500; z++) {
           function draw() {
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
 
    
-  // for (let z=1; z<500; z++) {
+  
        
 ctx.ellipse(100, 100, x, y, Math.PI / 1, 0, 2 * Math.PI);
 ctx.fillStyle="gray";
@@ -222,7 +222,7 @@ ctx.stroke();
     // Add one to each of the variables
   x=x+0,01;
   y=y+0,01;
-// }
+}
 }
          </script>
      <body onload="draw();">
