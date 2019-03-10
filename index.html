@@ -61,7 +61,7 @@ and bopping them on the head!</p>
     </ol>
         
       <canvas id="obrazek" width="400" height="400"></canvas>
-        <canvas id="przycisk" width="400" height="400"></canvas>
+        
         
 
 
@@ -149,6 +149,7 @@ ctx.stroke();
     clickerButton.addEventListener("click", onButtonClick);
     
     </script>
+        <canvas id="przycisk" width="400" height="400"></canvas>
         <script>
             
     // 1. Find and store the element we want to listen to events on.
@@ -158,8 +159,10 @@ ctx.stroke();
     var onButtonClick = function() {
         var s=document.getElementById("przycisk");
 var ctx=s.getContext("2d");
-      
-        <img src="IMAG0327.jpg" alt="dom" width="203"> 
+        var al = new Image();
+        ctx.drawImage(al, 0, 0, 300, 300);
+      al.src = "IMAG0327.jpg" alt="dom" width="203";
+       
     }
 
 
