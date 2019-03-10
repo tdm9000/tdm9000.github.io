@@ -157,12 +157,16 @@ ctx.stroke();
     // 2. Define the function that will respond to the event.
     // callback 
     var onButtonClick = function() {
-        var s=document.getElementById("przycisk");
-var ctx=s.getContext("2d");
+       
        var al = new Image();
        // ctx.drawImage(al, 0, 0, 300, 300);
     al.src = "IMAG0327.jpg" alt="dom" width="203";
-         
+        function draw() {
+             var s=document.getElementById("przycisk");
+var ctx=s.getContext("2d");
+
+  ctx.drawImage(al, 0, 0, 300, 300);
+        } 
     }
 
 
@@ -232,7 +236,7 @@ var y = 30;
           function draw() {
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
-for (let z=1; z<50; z++) {
+
    
   
  
@@ -250,9 +254,8 @@ ctx.stroke();
     
    
     // Add one to each of the variables
-  x=x+0,01;
-  y=y+0,01;
-}
+ 
+
 }
          </script>
      <body onload="draw();">
