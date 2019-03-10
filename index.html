@@ -150,28 +150,33 @@ ctx.stroke();
     
     </script>
         <canvas id="przycisk" width="400" height="400"></canvas>
+        
         <script>
            
     // 1. Find and store the element we want to listen to events on.
+            
     var pajakButton = document.getElementById("pajak");
+            
     // 2. Define the function that will respond to the event.
-    // callback 
+   
+            
     var onButtonClick = function() {
        
        
              var s=document.getElementById("przycisk");
 var ctx=s.getContext("2d");
-al = document.getElementById("IMAG0327.jpg");
-  ctx.drawImage(al, 0, 0, 300, 300);
-   
+    var al = new Image ();  
+        al.onload = ctx.drawImage(al, 0, 0, 300, 300);
+        al.src = "IMAG0327.jpg";
+  
     };
 
-
     // 3. Add the event listener for the element and function
-    // anonymous "inline"
+   
 pajakButton.addEventListener("click", onButtonClick);
     
     </script>
+        
         <script>
     // 1. Find and store the element we want to listen to events on.
     var clearButton = document.getElementById("clear");
