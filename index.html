@@ -91,6 +91,11 @@ and bopping them on the head!</p>
         <body>
 
 <script>
+    
+    var zegarButton = document.getElementById("zegar");
+    // 2. Define the function that will respond to the event.
+    // callback 
+    
 function addZero(i) {
   if (i < 10) {
     i = "0" + i;
@@ -98,15 +103,17 @@ function addZero(i) {
   return i;
 }
 
-function myFunction() {
+var onButtonClick = function() {
   var d = new Date();
-  var x = document.getElementById("demo");
+  var x = document.getElementById("zegar");
   var h = addZero(d.getHours());
   var m = addZero(d.getMinutes());
   var s = addZero(d.getSeconds());
   x.innerHTML = h + ":" + m + ":" + s;
- zegarButton.addEventListener("click", onButtonClick);
+ 
 }
+    
+    zegarButton.addEventListener("click", onButtonClick);
 </script>
 
 </body>
