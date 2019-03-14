@@ -286,6 +286,7 @@ var ctx=q.getContext("2d");
       ctx.restore();
     }
   }
+        window.requestAnimationFrame(draw);
 }
 //ctx.beginPath();
 //ctx.ellipse(100, 100, 50, 75, Math.PI / 1, 0, 2 * Math.PI);
@@ -296,8 +297,7 @@ var ctx=q.getContext("2d");
 //ctx.stroke();
     </script>
      
- <body onload="draw();">
-     </body>
+ 
      
      
      <canvas id="ekran" width="300" height="210"></canvas>
