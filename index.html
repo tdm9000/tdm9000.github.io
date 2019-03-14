@@ -283,19 +283,22 @@ var ctx=q.getContext("2d");
       ctx.save();
         
       ctx.fillStyle = "grey";
-      ctx.translate(10 + time1.getSeconds(), 10 + time1.getSeconds());
+      ctx.translate(10 + time1.getMilliseconds()/6000, 10 + time1.getMilliseconds()/6000);
       ctx.ellipse(60, 60, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="grey";
 ctx.stroke();
       ctx.restore();
-        
-        ctx.restore();
    
         window.requestAnimationFrame(draw);
 }
-//ctx.beginPath();
+ctx.fillStyle = "grey";
+    ctx.ellipse(60, 60, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.fill();
+ctx.lineWidth=1;
+ctx.strokeStyle="grey";
+ctx.stroke();
 
     window.requestAnimationFrame(draw);
     </script>
