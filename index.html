@@ -280,7 +280,8 @@ var ctx=l.getContext("2d");
 var ctx=q.getContext("2d");
   ctx.save();
   ctx.clearRect(0, 0, 300, 300);
-      
+        
+      ctx.globalCompositeOperation = 'destination-over';
         
       ctx.fillStyle = "grey";
       ctx.translate(10 + (time1.getMilliseconds()/5000), 10 + (time1.getMilliseconds()/5000));
