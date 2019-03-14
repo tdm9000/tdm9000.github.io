@@ -283,7 +283,7 @@ var ctx=q.getContext("2d");
       ctx.save();
         
       ctx.fillStyle = "grey";
-      ctx.translate(10 + time1.getSeconds(), 10 + (time1.getMiliseconds()/6000));
+      ctx.translate(10 + time1.getSeconds(), 10 + (time1.getMilliseconds()/6000));
       ctx.ellipse(60, 60, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
 ctx.lineWidth=1;
