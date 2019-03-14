@@ -286,6 +286,7 @@ var ctx=q.getContext("2d");
       ctx.globalCompositeOperation = 'destination-over';
         
       ctx.fillStyle = "grey";
+         ctx.translate(150, 150);
          ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
       ctx.translate(xx, yy);
        ctx.beginPath(); 
