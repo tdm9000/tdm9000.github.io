@@ -278,8 +278,8 @@ var ctx=l.getContext("2d");
 
     function rysuj() {
         var time1 = new Date();
-      var xx = 50 //time1.getMilliseconds()/60;
-       var yy = 51 //time1.getMilliseconds()/60;
+      var xx = 0 //time1.getMilliseconds()/60;
+       var yy = 0 //time1.getMilliseconds()/60;
         
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
@@ -320,15 +320,15 @@ ctx.stroke();
         //if (yy < 0) {
  // yy = 0;
 //}
-      //xx = xx + 1;
-        //yy = yy + 1;
+      xx = xx + 1;
+        yy = yy + 1;
      
         ctx.restore();
      
 };
 
 
-    window.setInterval(rysuj, 1000);
+    window.setInterval(rysuj, 10000);
     </script>
      
  
