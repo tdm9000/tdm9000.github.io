@@ -288,6 +288,7 @@ var ctx=l.getContext("2d");
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   ctx.save();
+        function rysuj3() {
 ctx.clearRect(0, 0, 600, 600);
         //ctx.style.backgroundColor = "lightblue";
         
@@ -311,9 +312,12 @@ ctx.clearRect(0, 0, 600, 600);
 ctx.lineWidth=1;
 ctx.strokeStyle="coral";
 ctx.stroke();
+        };
+        window.setInterval(rysuj3, 1500); 
    ctx.restore();
-       
-        
+       function rysuj2() {
+        ctx.clearRect(0, 0, 600, 600);
+           ctx.beginPath(); 
         ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(60, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
@@ -324,8 +328,8 @@ ctx.stroke();
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-        
-    window.setInterval(rysuj, 2000); 
+       };
+    window.setInterval(rysuj2, 1500); 
 };
      
             
