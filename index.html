@@ -322,9 +322,10 @@ ctx.stroke();
        //if (xx < 0) {
  // xx = 0;
 //}
-        if (time1.getMilliseconds() > 30000) {
+        if (time1.getMilliseconds() > 10000) {
 ctx.translate(-30, -30);
-}
+            time1.getMilliseconds() = 0
+};
      
         
      
@@ -333,7 +334,7 @@ ctx.translate(-30, -30);
 };
 
 
-    window.setInterval(rysuj, 1000);
+    window.setInterval(rysuj, 500);
     </script>
      
  
