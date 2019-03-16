@@ -312,6 +312,7 @@ ctx.clearRect(0, 0, 600, 600);
 ctx.lineWidth=1;
 ctx.strokeStyle="coral";
 ctx.stroke();
+            ctx.restore();
         };
         window.setInterval(rysuj3, 1500); 
    ctx.restore();
@@ -328,9 +329,10 @@ ctx.stroke();
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
+            
        };
     window.setInterval(rysuj2, 1500); 
-        ctx.restore();
+        
 };
      
             
