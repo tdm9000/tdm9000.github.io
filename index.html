@@ -275,9 +275,10 @@ var ctx=l.getContext("2d");
 <script>
 
     function rysuj() {
-      var xx = 1 //time1.getMilliseconds()/1000
-       var yy = 1 // time1.getMilliseconds()/1000
         var time1 = new Date();
+      var xx = time1.getMilliseconds()/1000
+       var yy = time1.getMilliseconds()/1000
+        
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   ctx.save();
@@ -302,7 +303,7 @@ ctx.stroke();
 };
 
 
-    window.setInterval(rysuj, 500);
+    window.setInterval(rysuj, 100);
     </script>
      
  
