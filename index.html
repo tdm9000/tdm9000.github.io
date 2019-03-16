@@ -285,9 +285,9 @@ var ctx=l.getContext("2d");
 var ctx=q.getContext("2d");
   ctx.save();
  ctx.clearRect(0, 0, 600, 600);
-        ctx.style.backgroundColor = "lightblue";
+        //ctx.style.backgroundColor = "lightblue";
         
-      //ctx.globalCompositeOperation = 'destination-over';
+      ctx.globalCompositeOperation = 'destination-over';
         
       ctx.fillStyle = "lightgrey";
          ctx.translate(150, 150);
@@ -309,7 +309,7 @@ ctx.stroke();
 };
 
 
-    window.setInterval(rysuj, 1);
+    window.setInterval(rysuj, 5);
     </script>
      
  
