@@ -276,8 +276,8 @@ var ctx=l.getContext("2d");
 
     function rysuj() {
         var time1 = new Date();
-      var xx = time1.getMilliseconds()/100;
-       var yy = time1.getMilliseconds()/100;
+      var xx = time1.getMilliseconds()/10;
+       var yy = time1.getMilliseconds()/10;
         
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
@@ -286,9 +286,9 @@ var ctx=q.getContext("2d");
         
       ctx.globalCompositeOperation = 'destination-over';
         
-      ctx.fillStyle = "pink";
+      ctx.fillStyle = "orange";
          ctx.translate(150, 150);
-         ctx.rotate(((2 * Math.PI) / 6) * time1.getSeconds() + ((2 * Math.PI) / 6000) * time1.getMilliseconds());
+         ctx.rotate((2 * Math.PI) / 6000) * time1.getMilliseconds());
       ctx.translate(xx, yy);
        ctx.beginPath(); 
       ctx.ellipse(30, 30, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
@@ -303,7 +303,7 @@ ctx.stroke();
 };
 
 
-    window.setInterval(rysuj, 10);
+    window.setInterval(rysuj, 1);
     </script>
      
  
