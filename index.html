@@ -353,34 +353,58 @@ ctx.stroke();
      
      <canvas id="ekran" width="300" height="210"></canvas>
     <script> 
-    // Set initial variables to values that we'll animate over time
-         var x = 30;
-var y = 30;
+    
+        
 
-          //function draw() {
+function rys() {
+         var time1 = new Date();
+      var xx =  0; //time1.getMilliseconds()/60;
+       var yy = 0;  //time1.getMilliseconds()/60;
+        
+        
+        
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
-
-   
-  
- ctx.beginPath();
-ctx.ellipse(x+30, y+30, x, y, Math.PI / 1, 0, 2 * Math.PI);
-ctx.fillStyle="gray";
-ctx.fill();
-ctx.lineWidth=5;
-ctx.strokeStyle="blue";
-ctx.stroke();
-   // }
-    // Moves across the canvas, getting taller
-    
-    
-    // Moves down the canvas, getting wider
-    
-   
-    // Add one to each of the variables
  
+        function rys3() {
+ctx.clearRect(0, 0, 600, 600);
+        //ctx.style.backgroundColor = "lightblue";
+        
+      //ctx.globalCompositeOperation = 'destination-over';
+        
+      ctx.fillStyle = "yellow";
+            ctx.save();
+     
+         xx =  0; //time1.getMilliseconds()/60;
+       yy = 80;  //time1.getMilliseconds()/60;
+         //ctx.translate(150, 150);
+         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+      ctx.translate(xx, yy);
+       ctx.beginPath(); 
+      ctx.ellipse(80, 80, 50, 50)
+        ctx.fill();
 
-
+            ctx.restore();
+        };
+        window.setInterval(rys3, 1500); 
+  
+       function rys2() {
+        ctx.clearRect(0, 0, 600, 600);
+           ctx.beginPath(); 
+        ctx.ellipse(80, 80, 50, 100)
+        ctx.fill();
+           
+            
+       };
+    window.setInterval(rys2, 1000); 
+        
+};
+ 
+    window.setInterval(rys, 2000);
+    </script>
+     
+ 
+     
          </script>
      <body onload="draw();">
      </body>
