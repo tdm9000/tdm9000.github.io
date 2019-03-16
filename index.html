@@ -364,6 +364,7 @@ function rys() {
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
  ctx.fillStyle = "yellow";  
+    
         function rys3() {
 ctx.clearRect(0, 0, 600, 600);
        
@@ -376,6 +377,9 @@ ctx.clearRect(0, 0, 600, 600);
        ctx.beginPath(); 
       ctx.ellipse(80, 80, 50, 50);
         ctx.fill();
+            ctx.lineWidth=1;
+ctx.strokeStyle="coral";
+ctx.stroke();
 
             ctx.restore();
         };
