@@ -288,7 +288,7 @@ var ctx=l.getContext("2d");
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   ctx.save();
-ctx.clearRect(0, 0, 600, 600);
+//.clearRect(0, 0, 600, 600);
         //ctx.style.backgroundColor = "lightblue";
         
       //ctx.globalCompositeOperation = 'destination-over';
@@ -322,7 +322,7 @@ ctx.stroke();
        //if (xx < 0) {
  // xx = 0;
 //}
-        if (time1.getMilliseconds() > 10) {
+        if (time1.getMilliseconds() > 100) {
 ctx.restore();
 }
      
@@ -333,7 +333,7 @@ ctx.restore();
 };
 
 
-    window.setInterval(rysuj, 100);
+    window.setInterval(rysuj, 10);
     </script>
      
  
