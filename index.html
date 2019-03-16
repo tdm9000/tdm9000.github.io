@@ -357,31 +357,24 @@ ctx.stroke();
         
 
 function rys() {
-         var time1 = new Date();
-      var xx =  0; //time1.getMilliseconds()/60;
-       var yy = 0;  //time1.getMilliseconds()/60;
         
-      ctx.fillStyle = "yellow";  
+      var xx =  0; 
+       var yy = 0;  
         
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
- 
+ ctx.fillStyle = "yellow";  
         function rys3() {
 ctx.clearRect(0, 0, 600, 600);
-        //ctx.style.backgroundColor = "lightblue";
-        
-      //ctx.globalCompositeOperation = 'destination-over';
-        
-      ctx.fillStyle = "yellow";
+       
             ctx.save();
      
-         xx =  0; //time1.getMilliseconds()/60;
-       yy = 80;  //time1.getMilliseconds()/60;
-         //ctx.translate(150, 150);
-         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+         xx =  0; 
+       yy = 80; 
+        
       ctx.translate(xx, yy);
        ctx.beginPath(); 
-      ctx.ellipse(80, 80, 50, 50)
+      ctx.ellipse(80, 80, 50, 50);
         ctx.fill();
 
             ctx.restore();
@@ -391,7 +384,7 @@ ctx.clearRect(0, 0, 600, 600);
        function rys2() {
         ctx.clearRect(0, 0, 600, 600);
            ctx.beginPath(); 
-        ctx.ellipse(80, 80, 25, 50)
+        ctx.ellipse(80, 80, 25, 50);
         ctx.fill();
            
             
@@ -404,7 +397,7 @@ ctx.clearRect(0, 0, 600, 600);
     </script>
      
  
-     
+    </body>  
          
      
      
