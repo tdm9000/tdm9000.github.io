@@ -352,14 +352,14 @@ ctx.stroke();
      
      
      <canvas id="ekran" width="300" height="300"></canvas>
-    <script> 
     
-        
-
+     
+     <script> 
+    
 function rys() {
         
-      var xx =  0; 
-       var yy = 0;  
+      var zz =  0; 
+       var vv = 0;  
         
         var o=document.getElementById("ekran");
 var ctx=o.getContext("2d");
@@ -369,10 +369,10 @@ ctx.clearRect(0, 0, 600, 600);
        
             ctx.save();
      
-         xx =  0; 
-       yy = 80; 
+         zz =  0; 
+       vv = 80; 
         
-      ctx.translate(xx, yy);
+      ctx.translate(zz, vv);
        ctx.beginPath(); 
       ctx.ellipse(80, 80, 50, 50);
         ctx.fill();
