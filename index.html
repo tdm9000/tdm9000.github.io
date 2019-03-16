@@ -275,16 +275,20 @@ var ctx=l.getContext("2d");
     <canvas id="prostokat" width="300" height="300"></canvas>
 
 <script>
+    
+   
 
     function rysuj() {
-        var time1 = new Date();
-      var xx = 0 //time1.getMilliseconds()/60;
-       var yy = 0 //time1.getMilliseconds()/60;
+         var time1 = new Date();
+      var xx = xx + 1 //time1.getMilliseconds()/60;
+       var yy = yy + 1  //time1.getMilliseconds()/60;
+        
+        
         
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   ctx.save();
- ctx.clearRect(0, 0, 600, 600);
+// ctx.clearRect(0, 0, 600, 600);
         //ctx.style.backgroundColor = "lightblue";
         
       //ctx.globalCompositeOperation = 'destination-over';
@@ -307,6 +311,7 @@ var ctx=q.getContext("2d");
 ctx.lineWidth=1;
 ctx.strokeStyle="coral";
 ctx.stroke();
+       
        // if (xx > 60) {
   //xx = xx - 2;
 //}
@@ -320,8 +325,8 @@ ctx.stroke();
         //if (yy < 0) {
  // yy = 0;
 //}
-      xx = xx + 10;
-        //yy = yy + 1;
+     
+        
      
         //ctx.restore();
      
