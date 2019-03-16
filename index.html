@@ -283,15 +283,19 @@ var ctx=l.getContext("2d");
 var ctx=q.getContext("2d");
   ctx.save();
  ctx.clearRect(0, 0, 600, 600);
+        ctx.background = "green"
         
       ctx.globalCompositeOperation = 'destination-over';
         
-      ctx.fillStyle = "pink";
+      ctx.fillStyle = "grey";
          ctx.translate(150, 150);
          ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 6000) * time1.getMilliseconds());
       ctx.translate(xx, yy);
        ctx.beginPath(); 
       ctx.ellipse(30, 30, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(55, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(65, 70, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(75, 70, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="grey";
