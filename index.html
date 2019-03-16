@@ -7,7 +7,9 @@
         <style>  background-color: pink;</style>
         <title>APARTAMENTY</title>
          <style>
-         background-color: pink;
+             body {background-color: coral;}
+             
+         
         h2 {
             color: rgb(1, 32, 50);
         }  
@@ -283,7 +285,7 @@ var ctx=l.getContext("2d");
 var ctx=q.getContext("2d");
   ctx.save();
  ctx.clearRect(0, 0, 600, 600);
-        //ctx.style.background = "lightblue";
+        ctx.style.backgroundColor = "lightblue";
         
       ctx.globalCompositeOperation = 'destination-over';
         
@@ -295,7 +297,7 @@ var ctx=q.getContext("2d");
       ctx.ellipse(30, 30, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(55, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(65, 70, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(70, 55, 5, 10, Math.PI / 3, 0, 2 * Math.PI);
+        ctx.ellipse(75, 55, 5, 10, Math.PI / 3, 0, 2 * Math.PI);
         ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="grey";
