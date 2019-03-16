@@ -308,20 +308,27 @@ ctx.lineWidth=1;
 ctx.strokeStyle="coral";
 ctx.stroke();
         if (xx > 60) {
-  xx = 0;
+  xx = xx - 2;
 }
         if (yy > 60) {
+  yy = yy - 2;
+}
+        
+       if (xx < 0) {
+  xx = 0;
+}
+        if (yy < 0) {
   yy = 0;
 }
-      xx = xx + 1
-        yy yy + 1 
+      xx = xx + 1;
+        yy yy + 1 ;
      
         ctx.restore();
      
 };
 
 
-    window.setInterval(rysuj, 5);
+    window.setInterval(rysuj, 1000);
     </script>
      
  
