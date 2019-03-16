@@ -297,9 +297,9 @@ var ctx=q.getContext("2d");
       ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(60, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(100, 40, 5, 10, Math.PI / 7, 0, 2 * Math.PI);
-        ctx.ellipse(60, 100, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(100, 100, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(100, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(65, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(95, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
          
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
@@ -307,7 +307,14 @@ var ctx=q.getContext("2d");
 ctx.lineWidth=1;
 ctx.strokeStyle="coral";
 ctx.stroke();
-      
+        if (xx > 60) {
+  xx = 0;
+}
+        if (yy > 60) {
+  yy = 0;
+}
+      xx = xx + 1
+        yy yy + 1 
      
         ctx.restore();
      
