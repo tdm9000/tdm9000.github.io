@@ -372,7 +372,7 @@ ctx.clearRect(0, 0, 600, 600);
         
       //ctx.globalCompositeOperation = 'destination-over';
         
-      ctx.fillStyle = "grey";
+      ctx.fillStyle = "yellow";
             ctx.save();
      
          xxx =  0; //time1.getMilliseconds()/60;
@@ -382,14 +382,8 @@ ctx.clearRect(0, 0, 600, 600);
       ctx.translate(xxx, yyy);
        ctx.beginPath(); 
       ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(60, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(100, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
-        ctx.ellipse(65, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(95, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-         
-        ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        
+        
         ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="coral";
@@ -401,15 +395,8 @@ ctx.stroke();
        function rysuje2() {
         ctx.clearRect(0, 0, 600, 600);
            ctx.beginPath(); 
-        ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(60, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(100, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
-        ctx.ellipse(65, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(95, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-         
-        ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(80, 80, 25, 50, Math.PI / 1, 0, 2 * Math.PI);
+        
         ctx.fill();
            
             
