@@ -281,13 +281,13 @@ var ctx=l.getContext("2d");
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   //ctx.save();
- ctx.clearRect(0, 0, 300, 300);
+ ctx.clearRect(0, 0, 600, 600);
         
       ctx.globalCompositeOperation = 'destination-over';
         
       ctx.fillStyle = "red";
          ctx.translate(150, 150);
-         ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+         ctx.rotate(((2 * Math.PI) / 6) * time1.getSeconds() + ((2 * Math.PI) / 6000) * time1.getMilliseconds());
       ctx.translate(xx, yy);
        ctx.beginPath(); 
       ctx.ellipse(0, 0, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
@@ -296,8 +296,8 @@ ctx.lineWidth=1;
 ctx.strokeStyle="grey";
 ctx.stroke();
       
-       xx = 0
-        yy = 0
+       xx = -1
+        yy = -1
        
    
         
