@@ -276,26 +276,26 @@ var ctx=l.getContext("2d");
 
     function rysuj() {
         var time1 = new Date();
-      var xx = time1.getMilliseconds()/30;
-       var yy = time1.getMilliseconds()/50;
+      var xx = time1.getMilliseconds()/60;
+       var yy = time1.getMilliseconds()/60;
         
         var q=document.getElementById("prostokat");
 var ctx=q.getContext("2d");
   ctx.save();
  ctx.clearRect(0, 0, 600, 600);
-        ctx.background = "green"
+        ctx.background = "lightgreen";
         
       ctx.globalCompositeOperation = 'destination-over';
         
-      ctx.fillStyle = "grey";
+      ctx.fillStyle = "lightgrey";
          ctx.translate(150, 150);
-         ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 6000) * time1.getMilliseconds());
+         ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
       ctx.translate(xx, yy);
        ctx.beginPath(); 
       ctx.ellipse(30, 30, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(55, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(65, 70, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(75, 70, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(65, 55, 5, 10, Math.PI / 4, 0, 2 * Math.PI);
         ctx.fill();
 ctx.lineWidth=1;
 ctx.strokeStyle="grey";
