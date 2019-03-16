@@ -292,7 +292,7 @@ var ctx=q.getContext("2d");
       ctx.fillStyle = "grey";
          ctx.translate(150, 150);
          ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
-      //ctx.translate(xx, yy);
+      ctx.translate(xx, yy);
        //ctx.beginPath(); 
       ctx.ellipse(30, 30, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(55, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
