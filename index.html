@@ -382,7 +382,7 @@ ctx.clearRect(0, 0, 600, 600);
       ctx.translate(xxx, yyy);
        ctx.beginPath(); 
       ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-     ctx.fillRect(90, 105, 40, 40); // Shadow   
+    
         
         ctx.fill();
 ctx.lineWidth=1;
@@ -396,7 +396,7 @@ ctx.stroke();
         ctx.clearRect(0, 0, 600, 600);
            ctx.beginPath(); 
         ctx.ellipse(80, 80, 25, 50, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.fillRect(90, 105, 40, 40); // Shadow
+        ctx.fillRect(65, 105, 60, 40); // Shadow
         ctx.fill();
            
             
@@ -405,7 +405,7 @@ ctx.stroke();
         
 };
 
-
+ ctx.fillRect(65, 105, 60, 40); // Shadow   
          
     window.setInterval(rysuje, 2000);
     </script>
