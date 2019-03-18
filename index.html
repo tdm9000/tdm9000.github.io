@@ -149,45 +149,100 @@ var onButtonClick = function() {
     // callback 
     var onButtonClick = function() {
       
+    
+   
 
-     var sun = new Image();
-var moon = new Image();
-var earth = new Image();
-function init() {
-  sun.src = 'https://mdn.mozillademos.org/files/1456/Canvas_sun.png';
-  moon.src = 'https://mdn.mozillademos.org/files/1443/Canvas_moon.png';
-  earth.src = 'https://mdn.mozillademos.org/files/1429/Canvas_earth.png';
-  window.requestAnimationFrame(draw);
-}
-
-function draw() {
-  var ctx = document.getElementById("obrazek").getContext("2d");
-
-  ctx.globalCompositeOperation = 'destination-over';
-  ctx.clearRect(0, 0, 300, 300); // clear canvas1
-
-  ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
-  ctx.strokeStyle = 'rgba(0, 153, 255, 0.4)';
-  ctx.save();
-  ctx.translate(150, 150);
-
-  // Earth
-  var time = new Date();
-  ctx.rotate(((2 * Math.PI) / 60) * time.getSeconds() + ((2 * Math.PI) / 60000) * time.getMilliseconds());
-  ctx.translate(105, 0);
-  ctx.fillRect(0, -12, 40, 24); // Shadow
-  ctx.drawImage(earth, -12, -12);
-
-
-  ctx.restore();
+    function rysuj() {
+         var time1 = new Date();
+      var xx =  0; //time1.getMilliseconds()/60;
+       var yy = 0;  //time1.getMilliseconds()/60;
+        var xx1 =  0; //time1.getMilliseconds()/60;
+       var yy1 = 0;  //time1.getMilliseconds()/60;
+        
+        
+        var q=document.getElementById("obrazek");
+var ctx=q.getContext("2d");
+  //ctx.save();
+        function rysuj3() {
+ctx.clearRect(0, 0, 600, 600);
+        //ctx.style.backgroundColor = "lightblue";
+        
+      //ctx.globalCompositeOperation = 'destination-over';
+        
+      ctx.fillStyle = "grey";
+            ctx.save();
+     
+         xx1 =  -60; //time1.getMilliseconds()/60;
+       yy1 = 80;  //time1.getMilliseconds()/60;
+         //ctx.translate(150, 150);
+         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+      ctx.translate(xx1, yy1);
+       ctx.beginPath(); 
+      ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+         
+        
+        ctx.fill();
+ctx.fillRect(180, 65, 40, 40); // Shadow
+            ctx.restore();
+        };
+        window.setInterval(rysuj3, 1100); 
+   //ctx.restore();
+       function rysuj2() {
+        ctx.clearRect(0, 0, 600, 600);
+           ctx.beginPath(); 
+        ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+         
+       
+        ctx.fill();
+ctx.fillRect(120, 145, 40, 40); // Shadow
+            
+       };
+         window.setInterval(rysuj2, 1800); 
+        
+        function rysuj4() {
+ctx.clearRect(0, 0, 600, 600);
+        //ctx.style.backgroundColor = "lightblue";
+        
+      //ctx.globalCompositeOperation = 'destination-over';
+        
+      ctx.fillStyle = "grey";
+            ctx.save();
+     
+         xx =  60; //time1.getMilliseconds()/60;
+       yy = 80;  //time1.getMilliseconds()/60;
+         //ctx.translate(150, 150);
+         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+      ctx.translate(xx, yy);
+       ctx.beginPath(); 
+      ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+       ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+         
+        
+        ctx.fill();
+ctx.fillRect(60, 65, 40, 40); // Shadow
+            ctx.restore();
+        };
+        window.setInterval(rysuj4, 1500); 
+   
+         //window.setInterval(rysuj2, 1400); 
+        };
+        
  
- 
-  
-
-  window.requestAnimationFrame(draw);
-}
-
-init();
+    window.setInterval(rysuj, 5000);
                
     };
     // 3. Add the event listener for the element and function
@@ -275,100 +330,7 @@ var ctx=l.getContext("2d");
     <canvas id="prostokat" width="300" height="300"></canvas>
 
 <script>
-    
-   
 
-    function rysuj() {
-         var time1 = new Date();
-      var xx =  0; //time1.getMilliseconds()/60;
-       var yy = 0;  //time1.getMilliseconds()/60;
-        var xx1 =  0; //time1.getMilliseconds()/60;
-       var yy1 = 0;  //time1.getMilliseconds()/60;
-        
-        
-        var q=document.getElementById("prostokat");
-var ctx=q.getContext("2d");
-  //ctx.save();
-        function rysuj3() {
-ctx.clearRect(0, 0, 600, 600);
-        //ctx.style.backgroundColor = "lightblue";
-        
-      //ctx.globalCompositeOperation = 'destination-over';
-        
-      ctx.fillStyle = "grey";
-            ctx.save();
-     
-         xx1 =  -60; //time1.getMilliseconds()/60;
-       yy1 = 80;  //time1.getMilliseconds()/60;
-         //ctx.translate(150, 150);
-         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
-      ctx.translate(xx1, yy1);
-       ctx.beginPath(); 
-      ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
-        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-         
-        
-        ctx.fill();
-ctx.fillRect(180, 65, 40, 40); // Shadow
-            ctx.restore();
-        };
-        window.setInterval(rysuj3, 1100); 
-   //ctx.restore();
-       function rysuj2() {
-        ctx.clearRect(0, 0, 600, 600);
-           ctx.beginPath(); 
-        ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
-        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-         
-       
-        ctx.fill();
-ctx.fillRect(120, 145, 40, 40); // Shadow
-            
-       };
-         window.setInterval(rysuj2, 1800); 
-        
-        function rysuj4() {
-ctx.clearRect(0, 0, 600, 600);
-        //ctx.style.backgroundColor = "lightblue";
-        
-      //ctx.globalCompositeOperation = 'destination-over';
-        
-      ctx.fillStyle = "grey";
-            ctx.save();
-     
-         xx =  60; //time1.getMilliseconds()/60;
-       yy = 80;  //time1.getMilliseconds()/60;
-         //ctx.translate(150, 150);
-         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
-      ctx.translate(xx, yy);
-       ctx.beginPath(); 
-      ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
-       ctx.ellipse(125, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
-        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
-         
-        
-        ctx.fill();
-ctx.fillRect(60, 65, 40, 40); // Shadow
-            ctx.restore();
-        };
-        window.setInterval(rysuj4, 1500); 
-   
-         //window.setInterval(rysuj2, 1400); 
-        };
-        
- 
-    window.setInterval(rysuj, 5000);
     </script>
      
  
