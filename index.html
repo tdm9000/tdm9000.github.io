@@ -282,7 +282,8 @@ var ctx=l.getContext("2d");
          var time1 = new Date();
       var xx =  0; //time1.getMilliseconds()/60;
        var yy = 0;  //time1.getMilliseconds()/60;
-        
+        var xx1 =  0; //time1.getMilliseconds()/60;
+       var yy1 = 0;  //time1.getMilliseconds()/60;
         
         
         var q=document.getElementById("prostokat");
@@ -297,11 +298,11 @@ ctx.clearRect(0, 0, 600, 600);
       ctx.fillStyle = "grey";
             ctx.save();
      
-         xx =  0; //time1.getMilliseconds()/60;
-       yy = 80;  //time1.getMilliseconds()/60;
+         xx1 =  0; //time1.getMilliseconds()/60;
+       yy1 = 80;  //time1.getMilliseconds()/60;
          //ctx.translate(150, 150);
          //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
-      ctx.translate(xx, yy);
+      ctx.translate(xx1, yy1);
        ctx.beginPath(); 
       ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
@@ -313,7 +314,7 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-
+ctx.fillRect(60, 85, 40, 40); // Shadow
             ctx.restore();
         };
         window.setInterval(rysuj3, 1500); 
@@ -331,7 +332,7 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-           
+          ctx.fillRect(60, 165, 40, 40); // Shadow 
             
        };
          window.setInterval(rysuj2, 1000); 
@@ -361,20 +362,15 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-
+ctx.fillRect(0, 85, 40, 40); // Shadow
             ctx.restore();
         };
         window.setInterval(rysuj4, 1500); 
    
         
 };
-     
-       
-
-     
-//ctx.clearRect(0, 0, 600, 600);
-
-    //window.setInterval(rysuj, 2000);
+ 
+    window.setInterval(rysuj, 2000);
     </script>
      
  
