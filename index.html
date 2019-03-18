@@ -311,10 +311,10 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
          
-        ctx.ellipse(135, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(145, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(125, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-ctx.fillRect(200, 75, 40, 40); // Shadow
+ctx.fillRect(180, 65, 40, 40); // Shadow
             ctx.restore();
         };
         window.setInterval(rysuj3, 1500); 
@@ -329,10 +329,10 @@ ctx.fillRect(200, 75, 40, 40); // Shadow
         ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
          
-        ctx.ellipse(135, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(145, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(125, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-ctx.fillRect(140, 155, 40, 40); // Shadow
+ctx.fillRect(120, 145, 40, 40); // Shadow
             
        };
          window.setInterval(rysuj2, 1000); 
@@ -359,16 +359,35 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
          
-        ctx.ellipse(135, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
-        ctx.ellipse(145, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(125, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-ctx.fillRect(80, 75, 40, 40); // Shadow
+ctx.fillRect(60, 145, 40, 40); // Shadow
             ctx.restore();
         };
         window.setInterval(rysuj4, 1500); 
    
         
-};
+
+     function rysuj2() {
+        ctx.clearRect(0, 0, 600, 600);
+           ctx.beginPath(); 
+        ctx.ellipse(140, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(140, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(160, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(160, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(125, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+         
+        ctx.ellipse(125, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(155, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.fill();
+ctx.fillRect(120, 145, 40, 40); // Shadow
+            
+       };
+         window.setInterval(rysuj2, 1000); 
+        };
+        
  
     window.setInterval(rysuj, 2000);
     </script>
