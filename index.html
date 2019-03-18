@@ -313,9 +313,7 @@ ctx.clearRect(0, 0, 600, 600);
         ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
         ctx.fill();
-ctx.lineWidth=1;
-ctx.strokeStyle="coral";
-ctx.stroke();
+
             ctx.restore();
         };
         window.setInterval(rysuj3, 1500); 
@@ -336,7 +334,38 @@ ctx.stroke();
            
             
        };
-    window.setInterval(rysuj2, 1000); 
+         window.setInterval(rysuj2, 1000); 
+        
+        function rysuj4() {
+ctx.clearRect(0, 0, 600, 600);
+        //ctx.style.backgroundColor = "lightblue";
+        
+      //ctx.globalCompositeOperation = 'destination-over';
+        
+      ctx.fillStyle = "grey";
+            ctx.save();
+     
+         xx =  60; //time1.getMilliseconds()/60;
+       yy = 80;  //time1.getMilliseconds()/60;
+         //ctx.translate(150, 150);
+         //ctx.rotate(((2 * Math.PI) / 60) * time1.getSeconds() + ((2 * Math.PI) / 60000) * time1.getMilliseconds());
+      ctx.translate(xx, yy);
+       ctx.beginPath(); 
+      ctx.ellipse(80, 80, 25, 25, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(80, 55, 15, 15, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(60, 40, 5, 10, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(100, 40, 5, 10, Math.PI / 8, 0, 2 * Math.PI);
+        ctx.ellipse(65, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(95, 95, 13, 13, Math.PI / 1, 0, 2 * Math.PI);
+         
+        ctx.ellipse(75, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.ellipse(85, 48, 3, 6, Math.PI / 1, 0, 2 * Math.PI);
+        ctx.fill();
+
+            ctx.restore();
+        };
+        window.setInterval(rysuj4, 1500); 
+   
         
 };
      
