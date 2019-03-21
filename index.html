@@ -8,7 +8,7 @@
         <title>APARTAMENTY</title>
          <style>
              body {background-color: lightgreen;}
-             
+#body2 {background-color: lightblue;}
          
         h2 {
             color: rgb(1, 32, 50);
@@ -337,7 +337,7 @@ var ctx=l.getContext("2d");
      </body>   
      
      <canvas id="ekran" width="300" height="300"></canvas>
- <body>   
+ <body2>   
      
      <script> 
     window.setInterval(rysuje, 1500);
@@ -351,7 +351,7 @@ var ctx=l.getContext("2d");
         var qq=document.getElementById("ekran");
 var ctx=qq.getContext("2d");
   
-      window.setInterval(rysuje3, 1100); 
+      window.setInterval(rysuje3, 1000); 
         function rysuje3() {
 ctx.clearRect(0, 0, 600, 600);
         //ctx.style.backgroundColor = "lightblue";
@@ -375,7 +375,7 @@ ctx.clearRect(0, 0, 600, 600);
             ctx.restore();
         };
        
-   window.setInterval(rysuje2, 1500); 
+   window.setInterval(rysuje2, 1400); 
        function rysuje2() {
         ctx.clearRect(0, 0, 600, 600);
            ctx.beginPath(); 
@@ -395,7 +395,7 @@ ctx.clearRect(0, 0, 600, 600);
     </script>
      
  
-    </body>  
+    </body2>  
          
      
      
